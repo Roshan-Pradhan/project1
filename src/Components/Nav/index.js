@@ -6,7 +6,7 @@ const Index = () => {
     <nav>
       <div className="nav-wrapper #ff1744 red accent-3">
         <Link to="/" className="brand-logo left">
-          Logo
+          RP
         </Link>
         <ul className="right">
           <li>
@@ -19,7 +19,7 @@ const Index = () => {
             <Link to="/api2">Api2</Link>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/api3">Api3</Link>
           </li>
         </ul>
       </div>

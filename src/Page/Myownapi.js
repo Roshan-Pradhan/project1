@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Card, Col, Row } from "antd";
 
 const Myownapi = () => {
   const [localapi, setLocalapi] = useState([]);
@@ -14,15 +15,20 @@ const Myownapi = () => {
   }, []);
 
   return (
-    <div className="MyCard">
-      <div className="cardHead">
-        <div className="carBody">
-          <h6> {localapi.sn}</h6>
-          <h4>{localapi.fname}</h4>
-          <h4>{localapi.age}</h4>
-          <h4>{localapi.address}</h4>
-        </div>
-      </div>
+    <div className="site-card-wrapper">
+      <Row gutter={16}>
+        {localapi.map((localapi, index) => {
+          return (
+            <Col span={8} key={index}>
+              <Card className="antCard" title={localapi.fname} bordered={false}>
+                <p>{localapi.age}</p>
+                <p>{localapi.address}</p>
+                <p>{localapi.email}</p>
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
     </div>
   );
 };

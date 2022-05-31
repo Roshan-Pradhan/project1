@@ -1,7 +1,15 @@
+@import "antd/dist/antd.css";
+
 body {
   background-color: #f7f8fb;
 }
-
+.site-card-wrapper {
+  padding: 20px;
+}
+.antCard {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
 .MyCard {
   display: grid;
   grid-template-columns: auto auto auto;
