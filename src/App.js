@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { useState } from "react";
+import Navbar from "./Components/Nav/index";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import Contactus from "./Page/Contactus";
+import Myownapi from "./Page/Myownapi";
+import Api2 from "./Page/Api2";
 function App() {
+  const [myVariable, setMyVariable] = useState({
+    sn: "one",
+    name: "Roshan",
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/api1" element={<Myownapi />}></Route>
+          <Route path="/api2" element={<Api2 />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

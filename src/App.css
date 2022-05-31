@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f7f8fb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.MyCard {
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 10px;
+  margin-top: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.cardHead {
+  background-color: #114f5a;
+  border-radius: 8px;
 }
+.carBody {
+  padding: 10px;
+  color: #f7f8fb;
+}
+.carBody h6 {
+  font-style: italic;
+  color: #c49450;
+  font-weight: bold;
+}
+.carBody h3 {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #c49450;
+  margin-top: 5px;
+}
+.carBody h5 {
+  font-size: 20px;
+}
+.carBody h4 {
+  font-size: 18px;
+}
+.carBody Span {
+  color: #c49450;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-weight: bold;
 }
