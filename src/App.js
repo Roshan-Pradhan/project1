@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Myownapi from "./Page/Myownapi";
 import Api2 from "./Page/Api2";
 import Api3 from "./Page/Api3";
+import SignUp from "./Page/SignUp";
 function App() {
   const [myVariable, setMyVariable] = useState({
     sn: "one",
@@ -18,8 +19,8 @@ function App() {
         <Routes>
           <Route path="/api1" element={<Myownapi />}></Route>
           <Route path="/api2" element={<Api2 />}></Route>
-          <Route path="/api3" element={<Api3
-           />}></Route>
+          <Route path="/api3" element={<Api3 />}></Route>
+          <Route path="/register" element={<SignUp />}></Route>
         </Routes>
       </Router>
     </div>

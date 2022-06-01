@@ -21,6 +21,9 @@ const Index = () => {
           <li>
             <Link to="/api3">Api3</Link>
           </li>
+          <li>
+            <Link to="/register">SignUp</Link>
+          </li>
         </ul>
       </div>
     </nav>
